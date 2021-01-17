@@ -1,0 +1,8 @@
+beautifulsoup4==4.9.3
+click==7.1.2
+heapq-max==0.21
+joblib==1.0.0
+nltk==3.5
+regex==2020.11.13
+soupsieve==2.1
+tqdm==4.56.0
