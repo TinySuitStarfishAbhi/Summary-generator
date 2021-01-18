@@ -12,9 +12,10 @@ gen_sent = st.number_input("Enter number of sentences", value=0, step=1)
 
 try:
     nltk.data.find('tokenizers/punkt')
+    nltk.data.find('tokenizers/stopwords')
 except LookupError:
     nltk.download('punkt')
-
+    nltk.download('tokenizers/stopwords')
 
 if(input_link==""):
     st.write("Hello! Enter a valid Wikipedia URL to get started!")
