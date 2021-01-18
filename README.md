@@ -1,12 +1,16 @@
 # Summary Generator
 A simple app to summarize Wikipedia articles. 
 
+**Python Version Used: 3.7.4**
 
 ### Packages used:
 - [NLTK](https://www.nltk.org/) 
 - [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
 - [Heapq](https://docs.python.org/3/library/heapq.html)
+
+### Framework to deploy:
 - [Streamlit](https://www.streamlit.io/)
+
 
 ### To run the app on your system:
 
