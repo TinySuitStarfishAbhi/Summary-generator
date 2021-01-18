@@ -7,3 +7,4 @@ regex==2020.11.13
 soupsieve==2.1
 tqdm==4.56.0
 streamlit==0.74.1
+protobuf==3.14.0
