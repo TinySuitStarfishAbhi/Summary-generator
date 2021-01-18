@@ -7,9 +7,14 @@ import nltk
 
 st.title("Generate a simple summary. ")
 
-
 input_link = st.text_input("Enter a Wikipedia Link!")
-gen_sent = st.number_input("Enter number of sentences")
+gen_sent = st.number_input("Enter number of sentences", value=0, step=1)
+
+try:
+    nltk.data.find('tokenizers/punkt')
+except LookupError:
+    nltk.download('punkt')
+
 
 if(input_link==""):
     st.write("Hello! Enter a valid Wikipedia URL to get started!")
@@ -56,8 +61,8 @@ else:
                     else:
                         sentence_scores[sent] += word_frequencies[word]
 
-    summary_sentences = heapq.nlargest(gen_sent, sentence_scores, key=sentence_scores.get)
+    summary_sentences = heapq.nlargest(int(gen_sent), sentence_scores, key=sentence_scores.get)
 
-    summary = ''.join(summary_sentences)
+    summary = ' '.join(summary_sentences)
     st.markdown("**Here's the summary** -")
     st.write(summary)
