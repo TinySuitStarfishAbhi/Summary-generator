@@ -1,7 +1,7 @@
 # Summary Generator
 A simple app to summarize Wikipedia articles. 
 
-**Python Version Used: 3.7.4**
+**Python Version used is: 3.7.4**
 
 ### Packages used:
 - [NLTK](https://www.nltk.org/) 
